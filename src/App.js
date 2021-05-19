@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Inputs from "./components/inputs.js";
+import Button from "./components/button.js";
+import Nav from "./components/nav.js";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+
+      <div className="container mt-5 mx-5 text-center flex">
+        <Inputs type="number" placeholder="Enter Class Name" />
+        <Button text="Add" />
+      </div>
     </div>
   );
 }
